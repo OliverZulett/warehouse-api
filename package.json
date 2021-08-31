@@ -5,11 +5,11 @@
   "main": "./dist/server.js",
   "scripts": {
     "clean": "npx rimraf dist",
-    "build": "npm run lint && npm run clean && npx tsc",
+    "build": "npm run lint && npm run format && npm run clean && npx tsc",
     "lint": "npx eslint 'src/**/*.ts'",
     "format": "npx prettier --write 'src/**/*.ts' && npx eslint src/ --fix",
     "start": "node --require dotenv/config ./dist/server.js",
-    "start:dev": "npx nodemon",
+    "start:dev": "npm run format && npx nodemon",
     "start:prod": "npm run build && npm run start",
     "test": "npx jest"
   },
