@@ -70,7 +70,7 @@ repository
 │   │   app.ts           //--> aqui cargamos las rutas y configuraciones
 │   └───config/          //--> aqui creamos las configuraciones
 │   └───controllers/     //--> aqui creamos los controladores para cada recurso
-│   └───entity/        //--> aqui creamos las entidades
+│   └───entity/          //--> aqui creamos las entidades
 │   └───exceptions/      //--> aqui creamos los excepciones
 │   └───lib/             //--> aqui ponemos librerias externas
 │   └───middleware/      //--> aqui creamos los middlewares
